@@ -1,4 +1,4 @@
-class EmailParser(list)
+class EmailParser
 
-
+  attr_accessor :list
 end
