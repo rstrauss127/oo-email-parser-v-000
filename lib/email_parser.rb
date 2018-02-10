@@ -7,7 +7,6 @@ class EmailParser
   end
 
   def parse
-    x = @list.split("," || " ").join(" ")
-    x.split(", ")
+    @list.split(",").join(" ").split(" ")
   end
 end
