@@ -5,12 +5,8 @@ class EmailParser
   def initialize(list)
     @list = list
   end
-
+  
   def parse
-    if @list.include?(",")
-      @list.split(",").map!(&:strip)
-    else
-      @list.split(" ")
-    end
+    @list.split
   end
 end
