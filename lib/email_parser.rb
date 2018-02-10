@@ -5,7 +5,7 @@ class EmailParser
   def initialize(list)
     @list = list
   end
-  
+
   def parse
     @list.split
   end
