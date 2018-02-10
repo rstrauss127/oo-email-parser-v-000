@@ -8,7 +8,7 @@ class EmailParser
 
   def parse
     if @list.include?(",")
-      @list.split(",").map(&:strip)
+      @list.split(",").map!(&:strip)
     else
       @list.split(" ")
     end
