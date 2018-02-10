@@ -8,6 +8,6 @@ class EmailParser
 
   def parse
     @list.split(",").join(" ").split(" ")
-    @list.unique
+    @list.uniq
   end
 end
