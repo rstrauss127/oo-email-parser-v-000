@@ -7,6 +7,7 @@ class EmailParser
   end
 
   def parse
-    @list.split.delete(",")
+    x = @list.split("," && " ").join(" ")
+    x.split(", ")
   end
 end
